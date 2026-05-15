@@ -22,7 +22,7 @@ The site highlights:
 ## Project Structure
 
 ```text
-/home/runner/work/Arvyonix/Arvyonix
+./
 ├── index.html          # Main landing page
 ├── style.css           # Site styling and responsive layout
 ├── script.js           # UI interactions and animations
@@ -40,7 +40,7 @@ Because this is a static site, you can run it in either of these ways:
 2. **Serve with a local static server (recommended)**
    - Python:
      ```bash
-     cd /home/runner/work/Arvyonix/Arvyonix
+     cd <project-directory>
      python3 -m http.server 8080
      ```
    - Then visit `http://localhost:8080`.
