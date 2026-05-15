@@ -558,7 +558,7 @@ nav.scrolled {
     color: var(--text-muted);
 }
 
-/* 6. WHY ARVYONIX (Features Grid) */
+/* 6. WHY ARVIONYX (Features Grid) */
 .features-section {
     background: radial-gradient(circle at center, rgba(var(--accent-violet-rgb), 0.05) 0%, transparent 70%);
     position: relative;

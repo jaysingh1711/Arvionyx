@@ -27,7 +27,7 @@ The site highlights:
 ├── style.css           # Site styling and responsive layout
 ├── script.js           # UI interactions and animations
 ├── logo-export.html    # Utility page for logo export previews
-└── arvyonix-logo.png   # Brand logo asset
+└── arvionyx-logo.png   # Brand logo asset
 ```
 
 ## Run Locally
