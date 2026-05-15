@@ -1,6 +1,6 @@
-# Arvyonix
+# Arvionyx
 
-Arvyonix is a single-page marketing website for an AI-powered automation and data intelligence brand. It is built with plain HTML, CSS, and JavaScript (no framework/build step required).
+Arvionyx is a single-page marketing website for an AI-powered automation and data intelligence brand. It is built with plain HTML, CSS, and JavaScript (no framework/build step required).
 
 ## Overview
 
