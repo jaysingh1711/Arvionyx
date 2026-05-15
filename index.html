@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvionyx | AI-Powered Automation & Data Intelligence</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=JetBrains+Mono:wght@400;700&family=Syne:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-circle-nodes"></i>
+                Arvionyx
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#process">How It Works</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-primary">Book a Demo</a>
+            </div>
+            <div class="mobile-menu-btn" id="mobileBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container fade-in">
+            <div class="badge"><i class="fa-solid fa-robot"></i> AI-Powered Automation & Data Intelligence</div>
+            <h1>Transforming Manual Processes into Intelligent Systems</h1>
+            <div class="hero-subtitle">
+                <div class="typing-text"><span id="typewriter"></span></div>
+            </div>
+            <div class="hero-cta">
+                <a href="#services" class="btn btn-primary">Start Automating <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#process" class="btn btn-secondary">Explore Solutions</a>
+            </div>
+        </div>
+        <a href="#stats" class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- 3. STATS / TRUST BAR -->
+    <section id="stats" class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in stagger-1">
+                    <h3><span class="counter" data-target="6">0</span>+</h3>
+                    <p>Services Offered</p>
+                </div>
+                <div class="stat-item fade-in stagger-2">
+                    <h3><span class="counter" data-target="3">0</span></h3>
+                    <p>Co-Founders</p>
+                </div>
+                <div class="stat-item fade-in stagger-3">
+                    <h3><span class="counter" data-target="100">0</span>%</h3>
+                    <p>Commitment</p>
+                </div>
+                <div class="stat-item fade-in stagger-4">
+                    <h3><span class="counter" data-target="5">0</span>+</h3>
+                    <p>Industries Targeted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">What We Build</h2>
+                <p class="section-subtitle">End-to-end automation and data solutions for AI-driven businesses</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="glass-card service-card fade-in stagger-1">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3>Data Annotation</h3>
+                    <p>High-quality image, text, video & audio labeling pipelines optimized for training accurate
+                        machine learning models at scale.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card service-card fade-in stagger-2">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Process Automation</h3>
+                    <p>Eliminate repetitive workflows with intelligent bots. We automate the mundane so your team can
+                        focus on strategic growth.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card service-card fade-in stagger-3">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>Human-in-the-Loop AI</h3>
+                    <p>Combining human accuracy with machine speed. Our expert teams validate AI outputs to guarantee
+                        enterprise-grade reliability.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card service-card fade-in stagger-4">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3>ML Data Pipelines</h3>
+                    <p>Scalable data ingestion, cleaning, and processing workflows designed to keep your machine
+                        learning models fed with structured data.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card service-card fade-in stagger-5">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <h3>Enterprise Integration</h3>
+                    <p>Seamlessly connect your existing tools and platforms. We build custom APIs and middleware to
+                        completely unify your tech stack.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card service-card fade-in stagger-6">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>Multi-layer QA frameworks ensuring annotation precision, process reliability, and strict
+                        adherence to industry compliance standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. HOW IT WORKS -->
+    <section id="process" class="section-padding" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Our Process</h2>
+                <p class="section-subtitle">A systematic, secure approach to transforming your operations</p>
+            </div>
+
+            <div class="process-flow">
+                <div class="process-step fade-in stagger-1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Discover</h4>
+                        <p>We deeply analyze your existing workflows, data infrastructure, and specific operational
+                            bottlenecks.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in stagger-2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Design</h4>
+                        <p>Crafting custom automation architectures and highly tailored data annotation pipelines for
+                            your needs.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in stagger-3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Deploy</h4>
+                        <p>Seamlessly integrating our intelligent solutions with your current systems with zero
+                            downtime.</p>
+                    </div>
+                </div>
+                <div class="process-step fade-in stagger-4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Scale</h4>
+                        <p>Continuous monitoring, optimization, and frictionless scaling of resources as your business
+                            expands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. WHY ARVIONYX (Features Grid) -->
+    <section class="section-padding features-section">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Built for Enterprise. Designed for Scale.</h2>
+                <p class="section-subtitle">Everything you need to accelerate your AI development cycle and dominate
+                    your market</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item fade-in stagger-1"><i class="fa-solid fa-circle-check"></i> High Accuracy
+                    Annotation</div>
+                <div class="feature-item fade-in stagger-2"><i class="fa-solid fa-circle-check"></i> AI-Assisted
+                    Labeling</div>
+                <div class="feature-item fade-in stagger-3"><i class="fa-solid fa-circle-check"></i> Real-Time
+                    Collaboration</div>
+                <div class="feature-item fade-in stagger-4"><i class="fa-solid fa-circle-check"></i> Secure Cloud
+                    Infrastructure</div>
+                <div class="feature-item fade-in stagger-5"><i class="fa-solid fa-circle-check"></i> Fast Turnaround
+                    Time</div>
+                <div class="feature-item fade-in stagger-6"><i class="fa-solid fa-circle-check"></i> Custom Automation
+                    Solutions</div>
+                <div class="feature-item fade-in stagger-1"><i class="fa-solid fa-circle-check"></i> Scalable Operations
+                </div>
+                <div class="feature-item fade-in stagger-2"><i class="fa-solid fa-circle-check"></i> Workflow
+                    Optimization</div>
+                <div class="feature-item fade-in stagger-3"><i class="fa-solid fa-circle-check"></i> Enterprise-Grade
+                    Security</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. TEAM SECTION -->
+    <section id="team" class="section-padding">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Meet the Team</h2>
+                <p class="section-subtitle">The visionary experts driving your automation forward</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="glass-card team-card fade-in stagger-1">
+                    <div class="team-avatar">JS</div>
+                    <h4>Jay Singh</h4>
+                    <div class="team-role">Co-Founder</div>
+                    <p class="team-bio">Computer Science student passionate about software engineering, building
+                        scalable applications, and exploring AI-driven technologies.</p>
+                    <div class="team-social">
+                        <a href="mailto:jaypsingh04@gmail.com" class="social-icon" title="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+919819162763" class="social-icon" title="Phone"><i
+                                class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="glass-card team-card fade-in stagger-2">
+                    <div class="team-avatar">SB</div>
+                    <h4>Siddharth Babel</h4>
+                    <div class="team-role">Co-Founder</div>
+                    <p class="team-bio">CS undergraduate with a strong interest in system architecture and automation,
+                        dedicated to creating efficient technical solutions.</p>
+                    <div class="team-social">
+                        <a href="mailto:siddharthbabel082@gmail.com" class="social-icon" title="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+919082721388" class="social-icon" title="Phone"><i
+                                class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="glass-card team-card fade-in stagger-3">
+                    <div class="team-avatar">SG</div>
+                    <h4>Shikhar Gupta</h4>
+                    <div class="team-role">Co-Founder</div>
+                    <p class="team-bio">Aspiring software engineer focused on machine learning and data processing,
+                        driven by a curiosity to solve complex problems.</p>
+                    <div class="team-social">
+                        <a href="mailto:shikharguptaoct13@gmail.com" class="social-icon" title="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+917045693337" class="social-icon" title="Phone"><i
+                                class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS -->
+    <!--
+    <section class="section-padding" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Trusted by Innovators</h2>
+                <p class="section-subtitle">See what our forward-thinking enterprise partners have to say</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="glass-card testimonial-card fade-in stagger-1">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Arvionyx completely transformed our training data pipeline. Their annotation accuracy is unmatched, saving us countless hours of rework and accelerating our go-to-market."</p>
+                    <div class="client-info">
+                        <h5>Sarah Jenkins</h5>
+                        <p>CTO, TechVision AI</p>
+                    </div>
+                </div>
+                <div class="glass-card testimonial-card fade-in stagger-2">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The BPA solutions implemented by the Arvionyx team accelerated our internal operations by 3x. Highly recommend their expertise for any scale-up looking to optimize."</p>
+                    <div class="client-info">
+                        <h5>Michael Chen</h5>
+                        <p>VP Operations, ScaleCorp</p>
+                    </div>
+                </div>
+                <div class="glass-card testimonial-card fade-in stagger-3">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="testimonial-text">"Outstanding communication and delivery from day one. They deeply understand enterprise security needs and deliver scalable, robust solutions consistently."</p>
+                    <div class="client-info">
+                        <h5>Priya Sharma</h5>
+                        <p>Director of ML, InnovateEdge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- 9. CTA BANNER -->
+    <section class="cta-banner fade-in">
+        <div class="container">
+            <h2>Ready to Automate Your Business?</h2>
+            <p>Join forward-thinking companies using Arvionyx to scale smarter and ship faster.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Book a Free Demo <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Talk to Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CONTACT SECTION -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="text-center fade-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss how we can accelerate your AI initiatives and optimize your
+                    workflows</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Form -->
+                <div class="glass-card fade-in stagger-1">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" class="form-control" placeholder="Acme Inc.">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control"
+                                placeholder="Tell us about your project, data needs, or automation goals..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 8px; width: 100%;">Send Message
+                            <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- Info -->
+                <div class="contact-info-cards fade-in stagger-2">
+                    <div class="glass-card info-card">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h5>General Inquiries</h5>
+                            <a href="mailto:shikharguptaoct13@gmail.com">shikharguptaoct13@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="glass-card info-card">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h5>Location</h5>
+                            <p>Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="glass-card info-card">
+                        <div class="info-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                        <div class="info-content">
+                            <h5>Connect With Us</h5>
+                            <div class="team-social" style="justify-content: flex-start; margin-top: 12px;">
+                                <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand fade-in stagger-1">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                        Arvionyx
+                    </a>
+                    <p>Powering AI with Precision. Transforming manual processes into intelligent systems through
+                        advanced annotation and scalable automation solutions.</p>
+                </div>
+                <div class="footer-links fade-in stagger-2">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Data Annotation</a></li>
+                        <li><a href="#services">Process Automation</a></li>
+                        <li><a href="#services">ML Pipelines</a></li>
+                        <li><a href="#services">Enterprise Integration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links fade-in stagger-3">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#home">About Us</a></li>
+                        <li><a href="#team">Meet The Team</a></li>
+                        <li><a href="#process">How It Works</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links fade-in stagger-4">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2025 Arvionyx. All rights reserved.</div>
+                <div>Designed for the Future of AI.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
