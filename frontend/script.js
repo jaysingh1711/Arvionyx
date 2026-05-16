@@ -149,9 +149,9 @@ if (contactForm) {
     };
 
     try {
-      // Replace with your production URL once deployed
       const response = await fetch(
-        "https://arvionyx.onrender.com/api/contact",
+        // "https://arvionyx.onrender.com/api/contact",
+        "http://localhost:5000/api/contact",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
