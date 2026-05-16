@@ -173,3 +173,46 @@ if (contactForm) {
     }
   });
 }
+
+// Copy-to-Clipboard Functionality for Team Cards
+document.addEventListener("DOMContentLoaded", () => {
+  const copyButtons = document.querySelectorAll(".copy-btn");
+  const toast = document.getElementById("clipboard-toast");
+
+  copyButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const textToCopy = button.getAttribute("data-copy");
+
+      if (navigator.clipboard) {
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(() => {
+            showToast();
+          })
+          .catch((err) => {
+            console.error("Could not copy text: ", err);
+          });
+      } else {
+        // Fallback for older browser engines
+        const textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+          document.execCommand("copy");
+          showToast();
+        } catch (err) {
+          console.error("Fallback copy failed", err);
+        }
+        document.body.removeChild(textArea);
+      }
+    });
+  });
+
+  function showToast() {
+    toast.classList.add("show");
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 2500); // Display toast window for 2.5 seconds
+  }
+});

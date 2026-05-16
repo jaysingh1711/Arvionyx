@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// for ping
+app.get("/api/health", (req, res) => {
+  res.status(200).send("Server is awake");
+});
+
 // Routes
 // This line links the logic you put in /routes/contact.js
 app.use("/api/contact", require("./routes/contact"));

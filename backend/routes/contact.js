@@ -23,8 +23,8 @@ router.post("/", async (req, res) => {
     // 3. Notify Team
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      // to: "shikharguptaoct13@gmail.com",
-      to: "siddharthbabel082@gmail.com",
+      to: "shikharguptaoct13@gmail.com",
+      // to: "siddharthbabel082@gmail.com",
       subject: `🚀 New DASS Inquiry: ${company || name}`,
       text: `Lead Details:\nName: ${name}\nEmail: ${email}\nCompany: ${company || "N/A"}\nMessage: ${message}`,
     });
