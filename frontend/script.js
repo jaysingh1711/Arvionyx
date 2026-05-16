@@ -150,8 +150,8 @@ if (contactForm) {
 
     try {
       const response = await fetch(
-        // "https://arvionyx.onrender.com/api/contact",
-        "http://localhost:5000/api/contact",
+        "https://arvionyx.onrender.com/api/contact",
+
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
