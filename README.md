@@ -46,11 +46,13 @@ Arvionyx/
 
 2. Create a `.env` file inside `backend/`:
    ```env
-   MONGO_URI=your_mongodb_connection_string
+   MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
    EMAIL_USER=your_gmail_address
    EMAIL_PASS=your_gmail_app_password
    PORT=5000
    ```
+   - `MONGO_URI` should be your full MongoDB connection string.
+   - `EMAIL_PASS` should be a Gmail App Password (Google Account → Security → 2-Step Verification → App passwords).
 
 3. Run the backend:
    ```bash
