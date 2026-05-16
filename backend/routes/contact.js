@@ -40,13 +40,19 @@ router.post("/", async (req, res) => {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: email,
-      subject: "Welcome to Arvyonix | Inquiry Received",
-      html: `<p>Hi ${name},</p><p>Thank you for reaching out to <b>Arvyonix</b>. We've received your request regarding your DASS needs and will get back to you within 24 hours.</p>`,
+      subject: "Welcome to Arvionyx | Inquiry Received",
+      html: `<p>Hi ${name},</p><p>Thank you for reaching out to <b>Arvionyx</b>. We've received your request regarding your DASS needs and will get back to you within 24 hours.</p>`,
     });
 
     res.status(200).json({ success: true });
   } catch (err) {
-    res.status(500).json({ success: false, error: err.message });
+    console.error("Backend Error Details:", err);
+    res.status(500).json({ 
+      success: false, 
+      error: err.message, 
+      code: err.code,
+      command: err.command 
+    });
   }
 });
 
