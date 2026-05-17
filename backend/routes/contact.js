@@ -21,10 +21,8 @@ router.post("/", async (req, res) => {
       "siddharthbabel082@gmail.com"
     ];
 
-    // Default Sandbox sender address.
-    // Change this to your real custom domain address (e.g. "Arvionyx <info@arvionyx.com>")
-    // once your domain is verified on the Resend dashboard!
-    const fromAddress = "Arvionyx <onboarding@resend.dev>";
+    // Custom domain sender address.
+    const fromAddress = "Arvionyx <info@arvionyx.in>";
 
     // 2. Notify Team
     const teamResponse = await resend.emails.send({
